@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace TP1_GRUPO_8
+﻿namespace TP1_GRUPO_8
 {
-    partial class Form1
+    partial class Index
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -39,9 +37,11 @@ namespace TP1_GRUPO_8
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(44, 34);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(59, 42);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 76);
+            this.button1.Size = new System.Drawing.Size(225, 94);
             this.button1.TabIndex = 0;
             this.button1.Text = "Ejercicio 1";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,9 +49,11 @@ namespace TP1_GRUPO_8
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(320, 34);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(427, 42);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 76);
+            this.button2.Size = new System.Drawing.Size(225, 94);
             this.button2.TabIndex = 1;
             this.button2.Text = "Ejercicio 2";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,9 +61,11 @@ namespace TP1_GRUPO_8
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(575, 34);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(767, 42);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(169, 76);
+            this.button3.Size = new System.Drawing.Size(225, 94);
             this.button3.TabIndex = 2;
             this.button3.Text = "Ejercicio 3";
             this.button3.UseVisualStyleBackColor = true;
@@ -71,9 +75,10 @@ namespace TP1_GRUPO_8
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 25F);
-            this.label1.Location = new System.Drawing.Point(313, 123);
+            this.label1.Location = new System.Drawing.Point(409, 196);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 39);
+            this.label1.Size = new System.Drawing.Size(228, 47);
             this.label1.TabIndex = 3;
             this.label1.Text = "Integrantes";
             // 
@@ -81,28 +86,27 @@ namespace TP1_GRUPO_8
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15F);
-            this.label2.Location = new System.Drawing.Point(309, 206);
+            this.label2.Location = new System.Drawing.Point(412, 254);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 39);
+            this.label2.Size = new System.Drawing.Size(219, 168);
             this.label2.TabIndex = 4;
-            this.label2.Text = "-Goitia Dante" + Environment.NewLine +
-                               "-Luque Jonatan" + Environment.NewLine +
-                               "-Daina Paucar" + Environment.NewLine +
-                               "-Pousada Paloma" + Environment.NewLine +
-                               "-Salazar Miguel" + Environment.NewLine +
-                               "-Santillán Candela";
+            this.label2.Text = "-Goitia Dante\r\n-Luque Jonatan\r\n-Paucar Daina\r\n-Pousada Paloma\r\n-Salazar Miguel\r\n-" +
+    "Santillán Candela";
             // 
-            // Form1
+            // Index
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Index";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
