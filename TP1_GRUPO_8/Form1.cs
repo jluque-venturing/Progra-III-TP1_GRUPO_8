@@ -34,6 +34,9 @@ namespace TP1_GRUPO_8
 
         }
 
-       
+        private void Index_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

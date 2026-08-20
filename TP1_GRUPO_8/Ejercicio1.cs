@@ -23,5 +23,35 @@ namespace TP1_GRUPO_8
         {
             index.Show();
         }
+
+        private void Ejercicio1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Obtenemos lo escrito en el textBox.
+            // Trim es para eliminar los espacios del principio y el final
+            string nombre = textBox1.Text.Trim();
+
+            // Comprobamos que el campo no este vacio.
+            if( nombre == "" ) {
+                // Mensaje para pedirle al usuario que ingrese su nombre.
+                // Al escribir se reemplaza por lo que ingrese el usuario.
+                MessageBox.Show(" Ingresa tu nombre ");
+            }
+
+            // Agregamos el nombre del usuario a la lista. 
+            listBox1.Items.Add(nombre);
+
+            // Limpiamos el campo de texto
+            textBox1.Clear();
+
+            // Volvemos al poner el cursor en el campo de texto 
+            textBox1.Focus(); 
+
+
+        }
     }
 }
