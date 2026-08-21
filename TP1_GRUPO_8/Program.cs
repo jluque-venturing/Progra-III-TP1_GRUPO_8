@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TP1_GRUPO_8
-{
+{ 
     internal static class Program
     {
         /// <summary>

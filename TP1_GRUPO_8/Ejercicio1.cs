@@ -40,8 +40,27 @@ namespace TP1_GRUPO_8
                 // Mensaje para pedirle al usuario que ingrese su nombre.
                 // Al escribir se reemplaza por lo que ingrese el usuario.
                 MessageBox.Show(" Ingresa tu nombre ");
+                
             }
 
+            bool estaRepetido = false;
+
+            foreach (string nombre_Guardado in listBox1.Items) //Recorro lo que se haya ingresado en la lista
+            {
+                if (nombre_Guardado.ToString().ToUpper() == nombre.ToUpper()) //Cambio el nombre a todo alfabetico y paso ambos nombres a mayusculas
+                {
+                    estaRepetido = true; 
+                    break; //Una vez encuentra el repetido, frena el ciclo
+
+                }
+            }
+
+            if (estaRepetido)
+            {
+                MessageBox.Show("Este nombre ya se encuentra en la lista"); 
+            }
+            else
+            {
             // Agregamos el nombre del usuario a la lista. 
             listBox1.Items.Add(nombre);
 
@@ -51,6 +70,7 @@ namespace TP1_GRUPO_8
             // Volvemos al poner el cursor en el campo de texto 
             textBox1.Focus(); 
 
+            }          
 
         }
     }
