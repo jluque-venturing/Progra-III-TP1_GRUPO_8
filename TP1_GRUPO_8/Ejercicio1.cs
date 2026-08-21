@@ -40,7 +40,7 @@ namespace TP1_GRUPO_8
                 // Mensaje para pedirle al usuario que ingrese su nombre.
                 // Al escribir se reemplaza por lo que ingrese el usuario.
                 MessageBox.Show(" Ingresa tu nombre ");
-                
+                return; ///CORRECCION 
             }
 
             bool estaRepetido = false;
