@@ -26,7 +26,7 @@ namespace TP1_GRUPO_8
 
         private void lblNombre_Click(object sender, EventArgs e)
         {
-
+            string nombre = textBox1.Text.Trim(); // La explicacion esta en button1
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -37,11 +37,26 @@ namespace TP1_GRUPO_8
 
         private void lblApellido_Click(object sender, EventArgs e)
         {
-
+            string apellido = textBox2.Text.Trim(); // La explicacion esta en button1
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Eliminamos los espacios en blanco al inicio y al final de los nombres y apellidos
+            string nombre = textBox1.Text.Trim();
+            string apellido = textBox2.Text.Trim();
+
+            // Agregamos el nombre y apellido a la lista
+            listBox1.Items.Add(nombre + " " + apellido);
         }
     }
 }
