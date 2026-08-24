@@ -33,7 +33,9 @@ namespace TP1_GRUPO_8
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Ejercicio3 ejercicio3 = new Ejercicio3(this);
+            ejercicio3.Show();
+            this.Hide();
         }
 
         private void Index_Load(object sender, EventArgs e)
