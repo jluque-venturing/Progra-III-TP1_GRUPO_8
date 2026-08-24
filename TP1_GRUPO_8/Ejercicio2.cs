@@ -33,5 +33,15 @@ namespace TP1_GRUPO_8
         {
 
         }
+
+
+        private void lblApellido_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
