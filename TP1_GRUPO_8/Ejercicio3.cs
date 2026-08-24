@@ -23,5 +23,10 @@ namespace TP1_GRUPO_8
         {
             index.Show();
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
