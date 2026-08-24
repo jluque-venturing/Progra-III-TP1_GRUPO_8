@@ -28,5 +28,25 @@ namespace TP1_GRUPO_8
         {
 
         }
+
+        private void Ejercicio3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genderMasc_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
