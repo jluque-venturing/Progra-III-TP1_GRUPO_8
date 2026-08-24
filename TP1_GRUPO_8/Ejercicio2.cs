@@ -24,39 +24,36 @@ namespace TP1_GRUPO_8
             index.Show();
         }
 
-        private void lblNombre_Click(object sender, EventArgs e)
-        {
-            string nombre = textBox1.Text.Trim(); // La explicacion esta en button1
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void lblApellido_Click(object sender, EventArgs e)
-        {
-            string apellido = textBox2.Text.Trim(); // La explicacion esta en button1
-        }
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             // Eliminamos los espacios en blanco al inicio y al final de los nombres y apellidos
             string nombre = textBox1.Text.Trim();
             string apellido = textBox2.Text.Trim();
+            
+            if (nombre.Length == 0) // Validamos que el usuario haya cargado algo en el campo "nombre"
+            {
+                MessageBox.Show("Debe ingresar un nombre");
+                return;
+            }
+            if (apellido.Length == 0) // Validamos que el usuario haya cargado algo en el campo "apellido"
+            {
+                MessageBox.Show("Debe ingresar un apellido");
+                return;
+            }
+            foreach (string item in listBox1.Items) // Validamos que no hayan personas repetidas con o sin distinta indentación
+            {
+                if (item.ToString().ToLower() == (nombre + " " + apellido).ToLower())
+                {
+                    MessageBox.Show("Los datos de esa persona ya habían sido ingresados");
+                    return;
+                }
+            }
 
             // Agregamos el nombre y apellido a la lista
             listBox1.Items.Add(nombre + " " + apellido);
+
+            // Ordenamos la lista alfabéticamente
+            listBox1.Sorted = true;
         }
     }
 }
