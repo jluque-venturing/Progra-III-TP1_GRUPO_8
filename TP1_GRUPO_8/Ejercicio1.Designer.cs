@@ -32,9 +32,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.listNombre1 = new System.Windows.Forms.ListBox();
+            this.listNombre2 = new System.Windows.Forms.ListBox();
+            this.redirect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,41 +80,41 @@
             // 
             // listBox1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(66, 122);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(196, 225);
-            this.listBox1.TabIndex = 4;
+            this.listNombre1.FormattingEnabled = true;
+            this.listNombre1.Location = new System.Drawing.Point(66, 122);
+            this.listNombre1.Margin = new System.Windows.Forms.Padding(2);
+            this.listNombre1.Name = "listBox1";
+            this.listNombre1.Size = new System.Drawing.Size(196, 225);
+            this.listNombre1.TabIndex = 4;
             // 
             // listBox2
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(388, 122);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(196, 225);
-            this.listBox2.TabIndex = 5;
-            this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
+            this.listNombre2.FormattingEnabled = true;
+            this.listNombre2.Location = new System.Drawing.Point(388, 122);
+            this.listNombre2.Margin = new System.Windows.Forms.Padding(2);
+            this.listNombre2.Name = "listBox2";
+            this.listNombre2.Size = new System.Drawing.Size(196, 225);
+            this.listNombre2.TabIndex = 5;
+            this.listNombre2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
-            // button3
+            // redirect
             // 
-            this.button3.Location = new System.Drawing.Point(295, 163);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 33);
-            this.button3.TabIndex = 6;
-            this.button3.Text = ">";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.redirect.Location = new System.Drawing.Point(295, 163);
+            this.redirect.Name = "redirect";
+            this.redirect.Size = new System.Drawing.Size(56, 33);
+            this.redirect.TabIndex = 6;
+            this.redirect.Text = ">";
+            this.redirect.UseVisualStyleBackColor = true;
+            this.redirect.Click += new System.EventHandler(this.redirect_Click);
             // 
             // Ejercicio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 406);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.redirect);
+            this.Controls.Add(this.listNombre2);
+            this.Controls.Add(this.listNombre1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -136,8 +136,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox listNombre1;
+        private System.Windows.Forms.ListBox listNombre2;
+        private System.Windows.Forms.Button redirect;
     }
 }

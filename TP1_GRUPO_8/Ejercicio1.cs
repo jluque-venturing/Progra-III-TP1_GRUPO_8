@@ -36,7 +36,8 @@ namespace TP1_GRUPO_8
             string nombre = textBox1.Text.Trim();
 
             // Comprobamos que el campo no este vacio.
-            if( nombre == "" ) {
+            if (nombre == "")
+            {
                 // Mensaje para pedirle al usuario que ingrese su nombre.
                 // Al escribir se reemplaza por lo que ingrese el usuario.
                 MessageBox.Show(" Ingresa tu nombre ");
@@ -45,11 +46,11 @@ namespace TP1_GRUPO_8
 
             bool estaRepetido = false;
 
-            foreach (string nombre_Guardado in listBox1.Items) //Recorro lo que se haya ingresado en la lista
+            foreach (string nombre_Guardado in listNombre1.Items) //Recorro lo que se haya ingresado en la lista
             {
                 if (nombre_Guardado.ToString().ToUpper() == nombre.ToUpper()) //Cambio el nombre a todo alfabetico y paso ambos nombres a mayusculas
                 {
-                    estaRepetido = true; 
+                    estaRepetido = true;
                     break; //Una vez encuentra el repetido, frena el ciclo
 
                 }
@@ -57,25 +58,20 @@ namespace TP1_GRUPO_8
 
             if (estaRepetido)
             {
-                MessageBox.Show("Este nombre ya se encuentra en la lista"); 
+                MessageBox.Show("Este nombre ya se encuentra en la lista");
             }
             else
             {
-            // Agregamos el nombre del usuario a la lista. 
-            listBox1.Items.Add(nombre);
+                // Agregamos el nombre del usuario a la lista. 
+                listNombre1.Items.Add(nombre);
 
-            // Limpiamos el campo de texto
-            textBox1.Clear();
+                // Limpiamos el campo de texto
+                textBox1.Clear();
 
-            // Volvemos al poner el cursor en el campo de texto 
-            textBox1.Focus(); 
+                // Volvemos al poner el cursor en el campo de texto 
+                textBox1.Focus();
 
-            }          
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
+            }
 
         }
 
@@ -83,5 +79,21 @@ namespace TP1_GRUPO_8
         {
 
         }
+
+        private void redirect_Click(object sender, EventArgs e)
+        {
+            if (listNombre1.SelectedItem != null)
+            {
+                listNombre2.Items.Add(listNombre1.SelectedItem);
+                listNombre1.Items.Remove(listNombre1.SelectedItem);
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un nombre de la lista.",
+                                    "Atención",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+            }
+        }
     }
-}
+    }
