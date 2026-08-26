@@ -35,6 +35,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.checkListCargo = new System.Windows.Forms.CheckedListBox();
+            this.ñ = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -131,11 +133,32 @@
             this.checkListCargo.Size = new System.Drawing.Size(200, 109);
             this.checkListCargo.TabIndex = 0;
             // 
+            // ñ
+            // 
+            this.ñ.AutoSize = true;
+            this.ñ.Location = new System.Drawing.Point(142, 330);
+            this.ñ.Name = "ñ";
+            this.ñ.Size = new System.Drawing.Size(0, 13);
+            this.ñ.TabIndex = 2;
+            this.ñ.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(145, 292);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Mostrar todo lo seleccionado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Ejercicio3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(533, 406);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ñ);
             this.Controls.Add(this.checkListCargo);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -149,6 +172,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,5 +185,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.CheckedListBox checkListCargo;
+        private System.Windows.Forms.Label ñ;
+        private System.Windows.Forms.Button button1;
     }
 }
