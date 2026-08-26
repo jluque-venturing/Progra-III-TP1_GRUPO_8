@@ -55,5 +55,17 @@ namespace TP1_GRUPO_8
             // Ordenamos la lista alfabéticamente
             listBox1.Sorted = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex != -1) //con esto verifico si hay elementos en la listbox
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex); //removemos el elemento seleccionado usando el indice
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un elemento de la lista para eliminarlo");
+            }
+        }
     }
 }
