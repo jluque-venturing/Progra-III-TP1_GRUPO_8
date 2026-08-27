@@ -58,6 +58,14 @@ namespace TP1_GRUPO_8
                 salida += "Sexo: " + (string)(genderMasc.Checked ? "Masculino" : "Femenino") + "\r\n";
                 salida += "Estado Civil: " + (string)(radioButton1.Checked ? "Casado" : "Soltero") + "\r\n";
 
+                salida += "Oficios:\r\n";
+
+               foreach (string item in checkListCargo.CheckedItems) //Recorro los items de la lista seleccionados
+                {
+                    salida += " - " + item.ToString() + "\r\n"; //Muestra los oficios seleccionados uno a uno
+
+                }
+
                 ñ.Text = salida;
             }
             else //este else es por si no se eligio nada
