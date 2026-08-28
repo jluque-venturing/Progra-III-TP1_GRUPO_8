@@ -67,5 +67,17 @@ namespace TP1_GRUPO_8
                 MessageBox.Show("Debe seleccionar un elemento de la lista para eliminarlo");
             }
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Boton para vaciar toda la lista.
+            if (listBox1.Items.Count > 0) // Verificamos que haya elementos en la lista
+            {
+                listBox1.Items.Clear(); // Vaciamos la lista
+            }
+            else
+            {
+                MessageBox.Show("Ya se borraron todos los nombres de la lista");
+            }
+        }
     }
 }

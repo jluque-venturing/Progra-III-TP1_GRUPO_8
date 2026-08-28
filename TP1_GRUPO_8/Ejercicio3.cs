@@ -25,31 +25,6 @@ namespace TP1_GRUPO_8
             index.Show();
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Ejercicio3_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void genderMasc_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         { // Validamos que el usuario haya seleccionado un sexo y un estado civil
             if ((genderMasc.Checked || genderFem.Checked) && (radioButton1.Checked || radioButton2.Checked))
@@ -58,12 +33,20 @@ namespace TP1_GRUPO_8
                 salida += "Sexo: " + (string)(genderMasc.Checked ? "Masculino" : "Femenino") + "\r\n";
                 salida += "Estado Civil: " + (string)(radioButton1.Checked ? "Casado" : "Soltero") + "\r\n";
 
-                ñ.Text = salida;
+                salida += "Oficios:\r\n";
+
+               foreach (string item in checkListCargo.CheckedItems) //Recorro los items de la lista seleccionados
+                {
+                    salida += " - " + item.ToString() + "\r\n"; //Muestra los oficios seleccionados uno a uno
+
+                }
+
+                label_mostrar.Text = salida;
             }
             else //este else es por si no se eligio nada
             {
 
-              ñ.Text = "";
+              label_mostrar.Text = "";
 
             }
 

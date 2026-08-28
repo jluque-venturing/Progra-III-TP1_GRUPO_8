@@ -24,11 +24,6 @@ namespace TP1_GRUPO_8
             index.Show();
         }
 
-        private void Ejercicio1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             // Obtenemos lo escrito en el textBox.
@@ -75,11 +70,6 @@ namespace TP1_GRUPO_8
 
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void redirect_Click(object sender, EventArgs e)
         {
             if (listNombre1.SelectedItem != null)
@@ -93,6 +83,25 @@ namespace TP1_GRUPO_8
                                     "Atención",
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Warning);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (listNombre1.SelectedItems.Count > 0)
+            {
+                foreach (string item in listNombre1.SelectedItems)
+                {
+                    listNombre2.Items.Add(item);
+                }
+                while (listNombre1.SelectedItems.Count > 0)
+                {
+                    listNombre1.Items.Remove(listNombre1.SelectedItems[0]);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un nombre de la lista.");
             }
         }
     }
