@@ -37,10 +37,5 @@ namespace TP1_GRUPO_8
             ejercicio3.Show();
             this.Hide();
         }
-
-        private void Index_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

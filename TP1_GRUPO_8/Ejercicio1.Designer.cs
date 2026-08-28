@@ -99,12 +99,11 @@
             this.listNombre2.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.listNombre2.Size = new System.Drawing.Size(260, 276);
             this.listNombre2.TabIndex = 5;
-            this.listNombre2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // redirect
             // 
             this.redirect.Location = new System.Drawing.Point(393, 201);
-            this.redirect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.redirect.Margin = new System.Windows.Forms.Padding(4);
             this.redirect.Name = "redirect";
             this.redirect.Size = new System.Drawing.Size(75, 41);
             this.redirect.TabIndex = 6;
@@ -141,7 +140,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ejercicio1_FormClosed);
-            this.Load += new System.EventHandler(this.Ejercicio1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

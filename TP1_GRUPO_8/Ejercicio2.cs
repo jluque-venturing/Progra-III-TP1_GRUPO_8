@@ -79,8 +79,5 @@ namespace TP1_GRUPO_8
                 MessageBox.Show("Ya se borraron todos los nombres de la lista");
             }
         }
-        private void Ejercicio2_Load(object sender, EventArgs e)
-        {
-        }
     }
 }

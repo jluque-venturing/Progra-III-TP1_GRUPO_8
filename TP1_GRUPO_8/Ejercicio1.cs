@@ -24,11 +24,6 @@ namespace TP1_GRUPO_8
             index.Show();
         }
 
-        private void Ejercicio1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             // Obtenemos lo escrito en el textBox.
@@ -72,11 +67,6 @@ namespace TP1_GRUPO_8
                 textBox1.Focus();
 
             }
-
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
